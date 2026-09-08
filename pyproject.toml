@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixel-art-harness"
+version = "0.1.0"
+description = "A model-agnostic pixel-art workflow for Aseprite"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY.md"]
+authors = [{name = "Carmelo Ventimiglia"}]
+dependencies = ["Pillow>=10.0"]
+
+[project.urls]
+Repository = "https://github.com/Memel06/pixel-art-harness"
+Issues = "https://github.com/Memel06/pixel-art-harness/issues"
+
+[project.scripts]
+pixelart = "pixelart.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pixelart*"]
+
+[tool.setuptools.package-data]
+pixelart = ["lua/*.lua"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "jsonschema>=4.18"]

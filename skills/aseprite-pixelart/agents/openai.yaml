@@ -1,0 +1,6 @@
+interface:
+  display_name: "Aseprite Pixel Art"
+  short_description: "Author and refine editable pixel art with Aseprite"
+  default_prompt: "Use $aseprite-pixelart to create polished, editable pixel art and inspect it at native resolution."
+policy:
+  allow_implicit_invocation: true

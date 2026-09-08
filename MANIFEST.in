@@ -1,0 +1,7 @@
+include LICENSE README.md SETUP.md THIRD_PARTY.md CONTRIBUTING.md
+recursive-include docs *.md *.png *.gif
+recursive-include examples *.md *.json *.py
+recursive-include skills *.md *.yaml
+recursive-include tools *.py *.sh *.lua *.md
+recursive-include tests *.py
+prune tools/aseprite-build/logs
